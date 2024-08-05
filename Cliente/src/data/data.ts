@@ -1,9 +1,10 @@
-const data = [
+import { Product } from "../types";
+export const data: Product[] = [
     {
         id: 1,
         product: "Monitor 24' LCD",
         price: 500000,
-        available: true,
+        available: "Disponible",
     },
     {
         id: 2,
@@ -25,4 +26,4 @@ const data = [
     }
 ];
 
-export default data;
+

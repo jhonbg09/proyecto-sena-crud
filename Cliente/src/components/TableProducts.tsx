@@ -1,29 +1,27 @@
-
-import  data  from '../data/data'
-import type { Product } from '../types'
+import { data } from "../data/data";
+import type { Product } from "../types";
 export default function TableProducts() {
   return (
-    <div>
-      <table>
-  <thead>
-    <tr>
-      <th>Product</th>
-      <th>Price</th>
-      <th>Available</th>
-    </tr>
-  </thead>
-  <tbody>
-    {data.map((products : Product) => (
-      <tr key={data.id}>
-        <td>{products.product}</td>
-        <td>{products.price}</td>
-        <td>{products.available}</td>
-      </tr>
-    ))}
-  </tbody>
-</table>
+    <div className="w-full">
+      <table className="table-auto">
+        <thead>
+          <tr>
+            <th className="p-3 mx-20">Producto</th>
+            <th className="p-3 mx-20">Precio</th>
+            <th className="p-3 mx-20">Disponible</th>
+            <th className="p-3 mx-20">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((products: Product) => (
+            <tr key={products.id} className="flex">
+              <td className="p-3 mx-10">{products.product}</td>
+              <td className="p-3 mx-10">{products.price}</td>
+              <td className="p-3 mx-10">{products.available}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
-  )
+  );
 }
-
-

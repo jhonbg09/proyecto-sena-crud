@@ -2,7 +2,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -18,4 +20,15 @@ p {
   font-family: "Concert One", sans-serif;
   font-weight: 100;
   font-style: normal;
+}
+
+tr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+th {
+
 }
