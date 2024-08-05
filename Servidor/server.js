@@ -6,9 +6,10 @@ const app = express();
 app.use(express.json());
 
 // Conectar a la base de datos MySQL |    nombre      |usuario|contraseña
-const sequelize = new Sequelize('productos_sena_crud', 'root', '',{
+const sequelize = new Sequelize('productos_sena_crud', 'root', 'root',{
     host: 'localhost',
-    dialect: 'mysql'
+    dialect: 'mysql',
+    port: 8889
 });
 
 // Definir un modelo (crear tablas)
