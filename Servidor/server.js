@@ -1,9 +1,16 @@
 const express = require('express');
+const cors = require('cors');//importar cors
 const { Sequelize, DataTypes } = require('sequelize');
 const app = express();
 
 // Middleware para parsear JSON
 app.use(express.json());
+
+app.use(cors({
+  origin: '*',  // Permitir solicitudes desde cualquier origen
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Métodos permitidos
+  allowedHeaders: ['Content-Type'],  // Encabezados permitidos
+}));
 
 // Conectar a la base de datos MySQL |    nombre      |usuario|contraseña
 const sequelize = new Sequelize('productos_sena_crud', 'root', '',{
