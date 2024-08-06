@@ -1,12 +1,13 @@
+import { useState } from "react";
 import TableProducts from "./TableProducts";
 import axios from "axios";
 
 export default function Products() {
-
+   const [productos, useProductos] = useState([])
   async function getUser() {
     try {
       const {data} = await axios.get('http://localhost:3000/productos');
-      console.log(data);
+      useProductos(data);
     } catch (error) {
       console.error(error);
     }
@@ -19,7 +20,9 @@ export default function Products() {
       <div className="text-center">
         <h2 className="uppercase">Productos</h2>
       </div>
-      <TableProducts />
+      <TableProducts 
+        productos={productos}
+      />
     </div>
   );
 }
