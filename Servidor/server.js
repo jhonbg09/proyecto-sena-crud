@@ -32,11 +32,11 @@ const producto = sequelize.define('producto', {
         allowNull: false
     },
     precio: {
-        type: DataTypes.DECIMAL,
+        type: DataTypes.DECIMAL(10, 2),
         allowNull: false
     },
     disponibilidad: {
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
         allowNull: false,
     }},{
     timestamps: false, //desactivar la creacion de las columnas "CreateAt" y "UpdateAt"
