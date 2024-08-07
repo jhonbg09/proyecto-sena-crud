@@ -1,4 +1,9 @@
+
+
+
 export default function Header() {
+ 
+
   return (
     <div className="bg-sky-500 m-0 p-0 w-screen h-10">
       <div>
@@ -7,9 +12,7 @@ export default function Header() {
         </h1>
       </div>
       <div>
-        <nav>Productos</nav>
-        <div></div>
-        <div>Agregar Producto</div>
+        
       </div>
     </div>
   );

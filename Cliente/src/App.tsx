@@ -5,7 +5,7 @@ import Products from './components/Products'
 
 function App() {
   return (
-    <div className='flex flex-col items-center m-0 w-screen h-screen'>
+    <div className='flex flex-col items-center m-0 '>
       {/* <Header/> */}
       <Products/>
     </div>
