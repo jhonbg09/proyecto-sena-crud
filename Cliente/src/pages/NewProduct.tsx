@@ -1,9 +1,9 @@
-import React from 'react'
+import Form from "../components/Form"
 
 export default function NewProduct() {
   return (
     <div>
-      <p>Hola desde nuevo producto</p>
+      <Form/>
     </div>
   )
 }

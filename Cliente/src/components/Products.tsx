@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TableProducts from "./TableProducts";
 import axios from "axios";
-import Menu from "./Menu";
+
 
 
 export default function Products() {
@@ -16,8 +16,6 @@ export default function Products() {
   }
 
   getUser();
-
- 
 
   return (
     <div className="justify-center h-full">

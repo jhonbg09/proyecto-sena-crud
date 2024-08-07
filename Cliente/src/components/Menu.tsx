@@ -8,7 +8,7 @@ export default function Menu() {
   const isHome = useMemo(() => pathname === "/inventario", [pathname]);
   console.log(isHome);
   return (
-    <div>
+    <div className="h-screen">
       <nav>
         <div className="flex flex-col w-full">
           <div className="mt-5">

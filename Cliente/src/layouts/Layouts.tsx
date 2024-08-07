@@ -7,11 +7,11 @@ export default function Layouts() {
     <>
       <Header />
 
-      <main className="flex flex-row">
-        <div className="w-1/2">
+      <main className="flex flex-row h-full w-full">
+        <div className="w-1/4 h-full bg-cyan-400">
           <Menu />
         </div>
-        <div className="w-1/2">
+        <div className="w-3/4">
           <Outlet />
         </div>
       </main>

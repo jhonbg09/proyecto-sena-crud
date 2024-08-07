@@ -25,7 +25,6 @@ export default function TableProducts({ productos }) {
                 <td className="p-3 mx-10">
                   <p className="text-left">{products.disponibilidad}</p>
                 </td>
-                {/* <td className="p-3 mx-10">{products.available}</td> */}
               </tr>
             ))}
           </tbody>
