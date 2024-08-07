@@ -3,10 +3,10 @@ import { useMemo } from "react";
 
 export default function Menu() {
   const { pathname } = useLocation();
-  console.log(pathname);
+  // console.log(pathname);
 
   const isHome = useMemo(() => pathname === "/inventario", [pathname]);
-  console.log(isHome);
+  // console.log(isHome);
   return (
     <div className="h-screen">
       <nav>
