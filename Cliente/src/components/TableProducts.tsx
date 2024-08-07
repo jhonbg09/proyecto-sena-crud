@@ -1,5 +1,6 @@
 import { data } from "../data/data";
 import type { Product } from "../types";
+
 export default function TableProducts({productos}) {
   return (
     <div className="w-full">
