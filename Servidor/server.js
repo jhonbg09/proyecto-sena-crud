@@ -13,10 +13,10 @@ app.use(cors({
 }));
 
 // Conectar a la base de datos MySQL |    nombre      |usuario|contraseña
-const sequelize = new Sequelize('productos_sena_crud', 'root', 'root',{
+const sequelize = new Sequelize('productos_sena_crud', 'root', '',{
     host: 'localhost',
     dialect: 'mysql',
-    port: 8889
+    port: 3306
 });
 
 // Definir un modelo (crear tablas)
